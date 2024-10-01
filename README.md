@@ -29,7 +29,7 @@ Testcases/
 │   ├── excercise3_1.in
 │   ├── excercise3_1.out
 
-Exercises/
+Scripts/
 ├── excercise1.py
 ├── excercise2.py
 ├── excercise3.py

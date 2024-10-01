@@ -22,11 +22,11 @@ class Test:
     pythonDir = sys.executable
     currentOs = ""
     testPath = os.path.join(os.getcwd(), "Testcases")
-    exPath = os.path.join(os.getcwd(), "Exercises")
+    exPath = os.path.join(os.getcwd(), "Scripts")
     timeout = 0
 
     # name = nome dell'esercizio
-    # diffPath = "nomePath", se ha una path diversa dalla default 'Exercises'
+    # diffPath = "nomePath", se ha una path diversa dalla default 'Scripts'
     # samePath = True, se il .py si trova nella cartella dei Testcases, con lo stesso nome
     def __init__(self, name, type="py"):
         self.name = name
@@ -39,12 +39,12 @@ class Test:
         self.risultati = {}  # Se si fa con i thread, per tenere traccia dei vari testcase
         self.title = name
 
-        self.exPath = os.path.join(os.getcwd(), "Exercises")
+        self.exPath = os.path.join(os.getcwd(), "Scripts")
         self.testPath = os.path.join(os.getcwd(),  "Testcases")
 
 
         # if self.currentOs == "Mac" or self.currentOs == "Linux":
-        #     self.exPath = os.getcwd() + "/Exercises"
+        #     self.exPath = os.getcwd() + "/Scripts"
         #     self.testPath = os.getcwd() + "/Testcases"
 
         self.exist = self.fileExists()

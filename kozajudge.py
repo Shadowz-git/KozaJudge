@@ -22,7 +22,7 @@ def startProgram(ex="") -> None:
     else:
         file = ex
     if os.path.exists(os.getcwd() + "/Testcases"):
-        if os.path.exists(os.getcwd() + "/Exercises"):
+        if os.path.exists(os.getcwd() + "/Scripts"):
             startJudging(file)
         else:
             print("Exercises not found. Please check the folders")
